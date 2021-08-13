@@ -7,7 +7,8 @@ LFLAGS		:= -L . -l asm
 SRC_DIR		:= src
 SRCS		:=	strlen.s	\
 				strcpy.s	\
-				strcmp.s
+				strcmp.s	\
+				write.s
 
 OBJ_DIR 	:= obj
 OBJS		:= $(addprefix $(OBJ_DIR)/,$(SRCS:.s=.o))
