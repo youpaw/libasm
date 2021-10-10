@@ -9,7 +9,8 @@ SRCS		:=	strlen.s	\
 				strcpy.s	\
 				strcmp.s	\
 				write.s		\
-				read.s
+				read.s		\
+				strdup.s
 
 OBJ_DIR 	:= obj
 OBJS		:= $(addprefix $(OBJ_DIR)/,$(SRCS:.s=.o))
