@@ -1,14 +1,16 @@
-section .text
-    global _ft_strlen
+BITS 64
 
-_ft_strlen:
+section .text
+global ft_strlen
+
+ft_strlen:
     mov rax, 0
 
-    loop:
+loop:
     cmp byte [rdi + rax], 0
     je lret
     inc rax
     jmp loop
 
-    lret:
+lret:
     ret

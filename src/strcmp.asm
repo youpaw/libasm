@@ -1,12 +1,12 @@
 section .text
-    global _ft_strcmp
+    global ft_strcmp
 
-_ft_strcmp:
+ft_strcmp:
     mov r8, 0
     mov rdx, 0
     mov rax, 0
 
-    loop:
+loop:
     mov al, byte [rdi + r8]
     mov dl, byte [rsi + r8]
     sub rax, rdx
@@ -17,5 +17,5 @@ _ft_strcmp:
     inc r8
     jmp loop
 
-    lret:
+lret:
     ret

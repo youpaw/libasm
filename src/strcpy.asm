@@ -1,11 +1,11 @@
 section .text
-    global _ft_strcpy
+    global ft_strcpy
 
-_ft_strcpy:
+ft_strcpy:
     mov rcx, 0
     mov rax, rdi
 
-    loop:
+loop:
     mov dl, byte [rsi + rcx]
     mov byte [rdi + rcx], dl
     cmp byte [rsi + rcx], 0
@@ -13,5 +13,5 @@ _ft_strcpy:
     inc rcx
     jmp loop
 
-    lret:
+lret:
     ret
